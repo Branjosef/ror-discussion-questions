@@ -1,6 +1,7 @@
-# ror-discussion-questions
+# Discussion Questions: MVCs in Rails
 
-Take 30 minutes and discuss the following with your table group. Try whiteboarding out different solutions and ideas!
+Take 30 minutes and discuss the following with your table group. Try
+whiteboarding out different solutions and ideas!
 
 1 . How does Twitter prevent two users from having the same username?
 
@@ -16,12 +17,16 @@ Take 30 minutes and discuss the following with your table group. Try whiteboardi
 
 4 . Why might you use this type of nested route?
 
-5 . Assume you have two models, `class Tweet` and `class Comment`. A Tweet `has_many :comments` and a Comment `belongs_to :tweet`. With only the routes defined above build out:
-  * a Tweet index action and view to display all tweets
-  * a Tweet show action and view to display only one tweet 
-  * a Tweet comments action and view to display all comments for a single Tweet
+5 . Assume you have two models, `class Tweet` and `class Comment`. A Tweet
+`has_many :comments` and a Comment `belongs_to :tweet`. With only the routes
+defined above build out:
 
-6 . In the code below what are the two private methods doing? How are they being called? Why would we use them?
+    * a Tweet index action and view to display all tweets
+    * a Tweet show action and view to display only one tweet 
+    * a Tweet comments action and view to display all comments for a single Tweet
+
+6 . In the code below what are the two private methods doing? How are they being
+called? Why would we use them?
 
 ```ruby
 class TweetController < ApplicationController
@@ -46,7 +51,8 @@ class TweetController < ApplicationController
 end
 ```
 
-7 . Write out an edit view with a form that will have a Post method to the Tweet controllers' update action.
+7 . Write out an edit view with a form that will have a Post method to the Tweet
+controllers' update action.
 
 CHALLENGE:
 
